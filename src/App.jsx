@@ -1,33 +1,50 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button, TextField, Container, Switch } from '@mui/material';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { AppProvider, useAppContext } from './Context/AppContext'; // Import the AppContext
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  Navigate,
+} from "react-router-dom";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  TextField,
+  Container,
+  Switch,
+} from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { AppProvider, useAppContext } from "./Context/AppContext"; // Import the AppContext
 
-import HomePage from './components/HomePage';
-import DataGridDemo from './components/DataGridDemo';
+import HomePage from "./components/HomePage";
+import DataGridDemo from "./components/DataGridDemo";
 
 function App() {
   return (
-    <AppProvider> {/* Wrap the app with AppProvider */}
+    <AppProvider>
+      {" "}
+      {/* Wrap the app with AppProvider */}
       <AppWithContext />
     </AppProvider>
   );
 }
 
 function AppWithContext() {
-  const { searchQuery, setSearchQuery, darkMode, toggleDarkMode } = useAppContext();
+  const { searchQuery, setSearchQuery, darkMode, toggleDarkMode } =
+    useAppContext();
 
   const theme = createTheme({
     palette: {
-      mode: darkMode ? 'dark' : 'light',
+      mode: darkMode ? "dark" : "light",
     },
   });
 
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <AppBar position="static" color={darkMode ? 'primary' : 'secondary'}>
+        <AppBar position="static" color={darkMode ? "primary" : "secondary"}>
           <Toolbar>
             <Typography variant="h6" sx={{ flexGrow: 1 }}>
               Movie App
@@ -36,7 +53,7 @@ function AppWithContext() {
               variant="outlined"
               size="small"
               placeholder="Search..."
-              sx={{ backgroundColor: 'white', borderRadius: 1, mr: 2 }}
+              sx={{ backgroundColor: "white", borderRadius: 1, mr: 2 }}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -52,7 +69,10 @@ function AppWithContext() {
         <Container sx={{ mt: 3 }}>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/edit" element={searchQuery ? <Navigate to="/" /> : <DataGridDemo />} />
+            <Route
+              path="/edit"
+              element={searchQuery ? <Navigate to="/" /> : <DataGridDemo />}
+            />
           </Routes>
         </Container>
       </Router>
@@ -61,6 +81,3 @@ function AppWithContext() {
 }
 
 export default App;
-
-// viraj pankhaniya
-// viraj 

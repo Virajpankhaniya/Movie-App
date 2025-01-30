@@ -3,10 +3,8 @@ import { useLocation } from "react-router-dom";
 import { Card, CardContent, CardMedia, Typography, Box } from "@mui/material";
 
 const MovieDetailPage = () => {
-
-  
   const location = useLocation();
-  const { movie } = location.state; 
+  const { movie } = location.state;
 
   return (
     <Box sx={{ maxWidth: 900, margin: "0 auto", padding: 3 }}>
@@ -31,4 +29,4 @@ const MovieDetailPage = () => {
   );
 };
 
-export default MovieDetailPage; 
+export default MovieDetailPage;
