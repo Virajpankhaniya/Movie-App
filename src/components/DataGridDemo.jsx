@@ -121,8 +121,10 @@ export default function DataGridDemo() {
           handleRowEdit(updatedRow);
           return updatedRow;
         }}
-        pageSizeOptions={[5, 10, 15]} 
- 
+        initialState={{
+          pagination: { paginationModel: { pageSize: 5 } },
+        }}
+        pageSizeOptions={[3, 5, 7, 10]}
       />
     </Box>
   );
