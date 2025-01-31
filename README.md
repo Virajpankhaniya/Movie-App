@@ -16,9 +16,3 @@
     <li><strong>Database:</strong> MongoDB / MySQL (if applicable)</li>
     <li><strong>API:</strong> Movie Database API (e.g., TMDb, OMDb)</li>
 </ul>
-
-<h2>📦 Installation</h2>
-<p>Follow these steps to set up the project on your local machine:</p>
-<ol>
-    <li>Clone the repository:
-        <pre><code>git clone https://github.com/your-username/movie-app.git
