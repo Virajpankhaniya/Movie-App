@@ -16,7 +16,7 @@ import {
   Switch,
 } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { AppProvider, useAppContext } from "./Context/AppContext"; // Import the AppContext
+import { AppProvider, useAppContext } from "./context/AppContext"; // Import the AppContext
 
 import HomePage from "./components/HomePage";
 import DataGridDemo from "./components/DataGridDemo";
@@ -24,8 +24,7 @@ import DataGridDemo from "./components/DataGridDemo";
 function App() {
   return (
     <AppProvider>
-      {" "}
-      {/* Wrap the app with AppProvider */}
+     
       <AppWithContext />
     </AppProvider>
   );

@@ -1,7 +1,7 @@
 <h2>Overview</h2>
 <h2>🎬 Features</h2>
 <ul>
-    <li>Display movie data in a structured grid and card layout</li>
+    <li>Display movie data in a structured Grid2 and card layout</li>
     <li>Search and filter movies based on various parameters</li>
     <li>Responsive design for better user experience</li>
     <li>Interactive UI using modern frontend technologies</li>

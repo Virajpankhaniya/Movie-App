@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Box from "@mui/material/Box";
-import { DataGrid } from "@mui/x-data-grid";
-import { useAppContext } from "../Context/AppContext";
+import { useState } from "react";
+import { DataGrid } from '@mui/x-data-grid';
+// import { useAppContext } from "../context/AppContext";
+import { Box } from "@mui/material";
 
 export let movieData = [
   {
@@ -99,7 +99,7 @@ const columns = [
 ];
 
 export default function DataGridDemo() {
-  const { darkMode } = useAppContext();
+  // const { darkMode } = useAppContext();
 
   const [movies, setMovies] = useState(movieData);
 

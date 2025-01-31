@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react";
 import {
   Card,
   CardContent,
@@ -13,7 +14,7 @@ import {
 } from "@mui/material";
 
 export default function MultiActionAreaCard({ movie }) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);

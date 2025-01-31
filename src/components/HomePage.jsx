@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Grid, Typography, Button } from "@mui/material";
+import { useState } from "react";
+import { Grid2, Typography, Button } from "@mui/material";
 import MultiActionAreaCard from "./MultiActionAreaCard";
 import { movieData } from "./DataGridDemo";
-import { useAppContext } from "../Context/AppContext";
+import { useAppContext } from "../context/AppContext";
 
 const HomePage = () => {
   const { searchQuery } = useAppContext();
@@ -37,21 +37,21 @@ const HomePage = () => {
         Sort Z-A
       </Button>
 
-      <Grid container spacing={3} style={{ marginTop: "10px" }}>
+      <Grid2 container spacing={2} justifyContent="center" style={{ marginTop: "10px" }}>
         {sortedMovies.length > 0 ? (
           sortedMovies.map((movie) => (
-            <Grid item xs={12} sm={6} md={4} key={movie.id}>
+            <Grid2 item xs={12} sm={6} md={3} lg={3} key={movie.id}>
               <MultiActionAreaCard movie={movie} />
-            </Grid>
+            </Grid2>
           ))
         ) : (
-          <Grid item xs={12} style={{ textAlign: "center", marginTop: "20px" }}>
+          <Grid2 item xs={12} style={{ textAlign: "center", marginTop: "20px" }}>
             <Typography variant="h6" color="text.secondary">
               No movies found. Try another search.
             </Typography>
-          </Grid>
+          </Grid2>
         )}
-      </Grid>
+      </Grid2>
     </div>
   );
 };
