@@ -121,7 +121,8 @@ export default function DataGridDemo() {
           handleRowEdit(updatedRow);
           return updatedRow;
         }}
-        pageSizeOptions={[5]}
+        pageSizeOptions={[5, 10, 15]} 
+ 
       />
     </Box>
   );
