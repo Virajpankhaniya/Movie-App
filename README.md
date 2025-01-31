@@ -9,10 +9,19 @@
     <li>Interactive UI using modern frontend technologies</li>
 </ul>
 
-<h2>🛠️ Technologies Used</h2>
+<h2>🖼️ Screenshots</h2>
+<p>Here are some screenshots of the Movie App:</p>
 <ul>
-    <li><strong>Frontend:</strong> React.js, Material-UI (DataGrid, Cards)</li>
-    <li><strong>Backend:</strong> Node.js, Express (if applicable)</li>
-    <li><strong>Database:</strong> MongoDB / MySQL (if applicable)</li>
-    <li><strong>API:</strong> Movie Database API (e.g., TMDb, OMDb)</li>
+    <li><strong>Home Page:</strong> Displays all movies</li>
+    <img src="https://github.com/Virajpankhaniya/Movie-App/blob/main/public/home.png" alt="Home Page" width="600">
+    <br>
+    <li><strong>Edit Movie:</strong> Users can edit movie details</li>
+    <img src="https://github.com/Virajpankhaniya/Movie-App/blob/main/public/edit.png" alt="Edit Page" width="600">
+    <br>
+    <li><strong>Search & Sorting:</strong> Users can search and sort movies</li>
+    <img src="https://github.com/Virajpankhaniya/Movie-App/blob/main/public/search.png" alt="Search & Sorting" width="600">
+    <br>
+    <li><strong>Theme Mode:</strong> Supports dark and light mode</li>
+    <img src="https://github.com/Virajpankhaniya/Movie-App/blob/main/public/dark%20mode.png" alt="Theme Mode" width="600">
 </ul>
+
